@@ -1,4 +1,5 @@
 
+
 #include <string>
 using namespace std;
 
@@ -10,3 +11,4 @@ namespace ariel{
     string mat(int cols, int row, char a, char b);
     
 }
+
