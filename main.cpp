@@ -1,7 +1,6 @@
 #include <iostream>
 #include <string>
 #include "mat.hpp"
-#include "time.h"
 using namespace ariel;
 using namespace std;
 
@@ -19,19 +18,6 @@ using namespace std;
   cout << "please enter a second char" << endl;
   cin >> b;
   cout << ariel::mat(cols, row, a, b) << endl;
-  cout << "and one random" << endl;
-  srand(time(0));
-  cols = (rand()%50)+1;
-  while (cols%2==0)
-  {
-    cols = (rand()%50)+1;  
-  }
-  row = (rand()%50)+1;
-  while (row%2==0)
-  {
-    row = (rand()%50)+1;  
-  }
-  cout << "rows: "<<row << " cols: "<< cols <<" " << endl;
   
-  cout << ariel::mat(cols, row, a, b) << endl;
+  
  }
